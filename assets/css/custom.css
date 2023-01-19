@@ -1,3 +1,11 @@
 a {
     color: black;
 }
+
+.project {
+    margin-bottom: 1em;
+}
+
+.project .title {
+    display: block;
+}

@@ -1,63 +1,138 @@
 <!DOCTYPE HTML>
 <!--
-    Astral by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 
 <head>
-    <title>Felix Breidenstein</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
+	<title>Felix Breidenstein</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
 <body class="is-preload">
 
-    <!-- Wrapper-->
-    <div id="wrapper">
+	<!-- Wrapper-->
+	<div id="wrapper">
 
-        <!-- Nav -->
-        <nav id="nav">
-            <a href="#" class="icon fa-home"><span>Home</span></a>
-            <a href="mailto:kontakt@felixbreidenstein.de" class="icon fa-envelope"><span>E-Mail</span></a>
-            <a href="https://blog.felixbreidenstein.de" class="icon fa-edit" target="_blank"><span>Blog</span></a>
-            <a href="https://twitter.com/fleaz_" class="icon fa-twitter" target="_blank"><span>Twitter</span></a>
-            <a href="https://github.com/fleaz" class="icon fa-github" target="_blank"><span>GitHub</span></a>
-        </nav>
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#work" class="icon solid fa-code"><span>Code</span></a>
+			<a href="https://blog.felixbreidenstein.de" class="icon fa-edit" target="_blank"><span>Blog</span></a>
+			<a href="https://slides.fleaz.me" class="icon solid fa-chalkboard-user" target="_blank"><span>Presentations</span></a>
+			<a href="mailto:kontakt@felixbreidenstein.de" class="icon fa-envelope"><span>E-Mail</span></a>
+			<a href="https://twitter.com/fleaz_" class="icon brands fa-twitter" target="_blank"><span>Twitter</span></a>
+			<a href="https://chaos.social/@fleaz" class="icon brands fa-mastodon" target="_blank"><span>Mastodon</span></a>
+		</nav>
 
-        <!-- Main -->
-        <div id="main">
+		<!-- Main -->
+		<div id="main">
 
-            <!-- Me -->
-            <article id="home" class="panel intro">
-                <header>
-                    <h1>Felix Breidenstein</h1>
-                    <p>B.Sc. Informatik von der <a href="https://www.tu-darmstadt.de" target="_blank">TU
-                            Darmstadt</a><br />
-                        DevOps Engineer bei <a href="https://codemonauts.com" target="_blank">
-                            &lt;code&gt;monauts</a><br />
-                        Gesellschafter bei <a href="https://fbms-hosting.de" target="_blank">FBMS-Hosting</a>
-                    </p>
-                </header>
-                <a class="pic">
-                    <img src="images/avatar.jpg" alt="" />
-                </a>
-            </article>
+			<!-- Me -->
+			<article id="home" class="panel intro">
+				<header>
+					<h1>Felix Breidenstein</h1>
+					<p>B.Sc. Informatik von der <a href="https://www.tu-darmstadt.de" target="_blank">TU
+							Darmstadt</a><br />
+						DevOps Engineer bei <a href="https://codemonauts.com" target="_blank">
+							&lt;code&gt;monauts</a><br />
+						Gesellschafter bei <a href="https://fbms-hosting.de" target="_blank">FBMS-Hosting</a>
+					</p>
+				</header>
+				<a class="pic">
+					<img src="images/avatar.jpg" alt="" />
+				</a>
+			</article>
 
-            <!-- Contact -->
-            <article id="contact" class="panel">
-                <header>
-                    <h2></h2>
 
-                </header>
+			<!-- Work -->
+			<article id="work" class="panel">
+				<header>
+					<h2>My projects</h2>
+				</header>
+                <p>
+                  <i class="fa-solid fa-share"></i> Most of my projects are hosted on <a href="https://github.com/fleaz" target="_blank">Github</a> or my private <a href="https://git.rainbownerds.de/felix" target="_blank">Gitlab</a> instance.
+                </p>
 
-            </article>
+                <p class="project">
+                <span class="title"><a href="https://github.com/fleaz/CptHook" target="_blank">CptHook</a></span>
+                Webhook to IRC Gateway with plugins for common tools like Gitlab and Prometheus
+
+                <p class="project">
+                  <span class="title"><a href="https://github.com/fleaz/prometheus-storagebox-exporter" target="_blank">prometheus-storagebox-exporter</a></span>
+                  A Prometheus exporter for Hetzner Storageboxes
+                </p>
+
+                <p class="project">
+                  <span class="title"><a href="https://github.com/fleaz/r53-ddns" target="_blank">r53-ddns</a></span>
+                  A DynDNS client which uses AWS Route53
+                </p>
+
+                <p class="project">
+                  <span class="title"><a href="https://github.com/fleaz/arduino-temp-exporter" target="_blank">arduino-temp-exporter</a></span>
+                  An Arduino Nano with a network shield and a temperature sensor, which you can include in your
+                  Prometheus monitoring
+                </p>
+
+                <p class="project">
+                  <span class="title"><a href="https://github.com/codemonauts/sqlstrip" target="_blank">sqlstrip</a></span>
+                  Remove tables from a sql dump to make it import faster
+                </p>
+
+                <p class="project">
+                  <span class="title"><a href="https://github.com/codemonauts/s3-ecouploader" target="_blank">s3-ecouploader</a></span>
+                  A sync tool for S3 with the goal to be time and memory efficient (Developed for a low-end NAS)
+                </p>
+
+                <p class="project">
+                  <span class="title"><a href="https://github.com/codemonauts/shared-2fa" target="_blank">shared-2fa</a></span>
+                  A CLI "password manager" which allows to share TOTP token in a team for shared accounts
+                </p>
+
+                <p class="project">
+                  <span class="title"><a href="https://github.com/codemonauts/nocontent" target="_blank">nocontent</a></span>
+                  A serverless application which renders placeholder images on demand for webdev prototyping
+                </p>
+
+			</article>
+
+			<!-- Contact -->
+			<article id="contact" class="panel">
+				<header>
+					<h2>Contact Me</h2>
+				</header>
+				<form action="#" method="post">
+					<div>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-medium">
+								<input type="text" name="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" placeholder="Subject" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<input type="submit" value="Send Message" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</article>
+
+			<!-- Imprint -->
 
             <article id="imprint" class="panel">
                 <header>
@@ -105,25 +180,25 @@
 
             </article>
 
-        </div>
+		</div>
 
-        <!-- Footer -->
-        <div id="footer">
-            <ul class="copyright">
-                <li>&copy; Felix Breidenstein</li>
-                <li><a href="#imprint">Impressum</a></li>
-                <li><a href="http://html5up.net">Design by HTML5 UP</a></li>
-            </ul>
-        </div>
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; Felix Breidenstein</li>
+				<li><a href="#imprint">Impressum</a></li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
 
-    </div>
+	</div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
 </body>
 
